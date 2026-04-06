@@ -4,18 +4,13 @@
 int main(){
 
 
-    std::string nome;
-    int idade;
-    int anoAtual = 2026;
+   std::string nome;
+   std::string sobrenome = " Lima";
 
-    std::cout<<"Olá qual o seu primeiro nome? "<<std::endl;
-    std::cin>>nome;
+   std::cout<<"Digite seu nome: "<<std::endl;
+   std::cin>>nome;
 
-    std::cout<<"Qual a sua idade? "<<std::endl; 
-    std::cin>>idade;
-    int anoNascido = anoAtual - idade;
-
-    std::cout<< "Olá" <<nome<< "!! Você nasceu no ano de" << anoNascido <<std::endl;
+   std::cout<<nome.append(sobrenome);
 
 
     return 0;
