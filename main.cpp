@@ -5,10 +5,9 @@
 
 int main(){
 
-    std::string nome = "Arthur";
+    int numeros[5] = {10,20,30,40,50};
 
-    std::cout<<"O seu nome tem: "<<nome.length()<<" letras."<<std::endl;
-    std::cout<<nome.size()<<" letras."<<std::endl;
+    std::cout<<numeros[1];
 
 
     SetConsoleOutputCP(CP_UTF8);//
