@@ -2,18 +2,14 @@
 #include<string>
 #include<iostream>
 #include<windows.h> //
+#include<cmath>
 
 int main(){
 
-    std::string nome = "Arthur";
+    int a = 5;
+    int b = 3;
 
-    std::cout<<nome[0]<<std::endl;
-    std::cout<<nome[2]<<std::endl;
-    std::cout<<nome[nome.length() - 1]<<std::endl;
-    nome[0] = 'E';
-    std::cout<<nome<<std::endl;
-
-
+    std::cout<<std::max(a, b)<<std::endl;
 
 
     SetConsoleOutputCP(CP_UTF8);//
