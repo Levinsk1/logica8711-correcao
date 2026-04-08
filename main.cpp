@@ -10,6 +10,7 @@ int main(){
     int b = 3;
 
     std::cout<<std::max(a, b)<<std::endl;
+    std::cout<<std::min(a, b)<<std::endl;
 
 
     SetConsoleOutputCP(CP_UTF8);//
