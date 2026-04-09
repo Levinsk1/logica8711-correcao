@@ -6,14 +6,22 @@
 
 int main(){
 
-   std::cout<<std::sqrt(64)<<std::endl;
-   std::cout<<std::round(2.6)<<std::endl;
-   std::cout<<std::log(2)<<std::endl;
+    SetConsoleOutputCP(CP_UTF8);//
+    SetConsoleCP(CP_UTF8);//
+
+
+   int a = 5;
+   int b = 2;
+
+   if(a > b){
+    std::cout<<"A é maior que B. "<<std::endl;
+   }else{
+    std::cout<<"B é maior que A. "<<std::endl;
+   }
     
 
 
-    SetConsoleOutputCP(CP_UTF8);//
-    SetConsoleCP(CP_UTF8);//
+
 
     return 0;
 } 
