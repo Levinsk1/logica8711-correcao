@@ -6,15 +6,10 @@
 
 int main(){
 
-    int a = 8;
-    int b = 3;
-    int c = 5;
-    int d = 4;
-
-    int maior1 = std::max(a, b);
-    int maior2 = std::max(c, b);
-
-    std::cout<<(maior1 > maior2)<<std::endl;
+   std::cout<<std::sqrt(64)<<std::endl;
+   std::cout<<std::round(2.6)<<std::endl;
+   std::cout<<std::log(2)<<std::endl;
+    
 
 
     SetConsoleOutputCP(CP_UTF8);//
