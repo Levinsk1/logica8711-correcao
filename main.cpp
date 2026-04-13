@@ -9,21 +9,17 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);//
     SetConsoleCP(CP_UTF8);//
 
+    int idade;
 
-   std:: string user;
-   std:: string senha;
+    std::cout<<"Digite a sua idade: "<<std::endl;
+    std::cin>>idade;
 
-   std::cout<<"Digite seu usuario de acesso: "<<std::endl;
-    std::cin>>user;
-
-    std::cout<<"Digite sua senha: "<<std::endl;
-    std::cin>>senha;
-
-    if(senha == "123546"){
-        std::cout<<"O usuario "<<user<<" está logado com sucesso!!"<<std::endl;
-        }else{
-            std::cout<<"Usuário ou senha incorretos!!"<<std::endl;
-        }
+    if(idade >= 18){
+        std::cout<<"Você é maior de idade!"<<std::endl;
+    }else{
+        std::cout<<"Voê é menor de idade!!"<<std::endl;
+    }
+    
     
 
 
