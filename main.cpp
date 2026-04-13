@@ -14,10 +14,16 @@ int main(){
     std::cout<<"Digite a sua idade: "<<std::endl;
     std::cin>>idade;
 
-    if(idade >= 18){
-        std::cout<<"Você é maior de idade!"<<std::endl;
+    if(idade < 0){
+        std::cout<<"Idade Invalida!"<<std::endl;
+    }else if(idade <= 2){
+        std::cout<<"Você é um bebe?"<<std::endl;
+    }else if(idade <= 8){
+        std::cout<<"Você é uma criança?"<<std::endl;
+    }else if(idade <= 16){
+        std::cout<<"Você é um adolecente?"<<std::endl;
     }else{
-        std::cout<<"Voê é menor de idade!!"<<std::endl;
+        std::cout<<"Você é um sênior?"<<std::endl;
     }
     
     
