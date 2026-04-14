@@ -12,7 +12,6 @@ int main(){
     std::string nome;
     int idade;
     float altura;
-    std::string classe;
 
     std::cout<<"Qual seu nome? "<<std::endl;
     std::cin>>nome;
