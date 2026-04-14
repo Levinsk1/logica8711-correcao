@@ -9,35 +9,34 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);//
     SetConsoleCP(CP_UTF8);//
 
-    int opcaoPagamento;
-    int qtdParafuso;
-    float valorParafuso = 2.00;
-    float valorTotalParafuso;
-    float desconto;
-    float juros;
+    std::string nome;
+    int idade;
+    float altura;
+    std::string classe;
 
-    std::cout<<"Digite a quantidade de parafusos que deseja: "<<std::endl;
-    std::cin>>qtdParafuso;
+    std::cout<<"Qual seu nome? "<<std::endl;
+    std::cin>>nome;
 
-    valorTotalParafuso = qtdParafuso * valorParafuso;
+    std::cout<<"Qual a sua altura? "<<std::endl;
+    std::cin>>altura;
 
-    std::cout<<"Qual a forma de pagamento: "<<std::endl;
-    std::cout<<"--- 1 - Pix"<<std::endl;
-    std::cout<<"--- 2 - Dinheiro"<<std::endl;
-    std::cout<<"--- 3 - Cartão"<<std::endl;
-    std::cin>>opcaoPagamento;
+     std::cout<<"Qual a sua idade? "<<std::endl;
+    std::cin>>idade;
 
-    if(opcaoPagamento == 1){
-        std::cout<<"Sua compra ficou no valor total de R$: "<<valorTotalParafuso<<std::endl;
-    }else if(opcaoPagamento == 2){
-        desconto = valorTotalParafuso * 0.90;
-        std::cout<<"Sua compra ficou no valor de R$: "<<desconto<<std::endl;
-    }else{
-        juros = valorTotalParafuso * 1.10;
-        std::cout<<"sua compra ficou no valor total de R$: "<<valorTotalParafuso<<std::endl;
+
+    std::cout<<"Bem vindo(a) "<<nome<<"!! Sua altura é "<<altura<<" Você é da ";
+
+
+     if(idade < 0){
+        std::cout<<"Idade Invalida!"<<std::endl;
+    }else if(idade <= 10){
+        std::cout<<"Classe infantil"<<std::endl;
+    }else if(idade <= 18){
+        std::cout<<"Classe adolescente"<<std::endl;
+    }else if(idade <= 60){
+        std::cout<<"Classe adulto"<<std::endl;
     }
 
-    
     
     
 
