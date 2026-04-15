@@ -11,17 +11,23 @@ int main(){
     SetConsoleOutputCP(CP_UTF8);//
     SetConsoleCP(CP_UTF8);//
 
-    int tabuada = 7;
+    int opcao;
 
-    for(int i = 0; i <= 10; i++){
-        std::cout<<"o resultado de "<<tabuada<<" x "<<i<<" = "<<tabuada * i <<std::endl;
+    std::cout<<"Digite um valor para opção: "<<std::endl;
+    std::cin>>opcao;
+
+    switch(opcao){
+    case 1:
+         std::cout<<"Domingo! "<<std::endl;
+    break;
+    case 2:
+        std::cout<<"Segunda-Feira!"<<std::endl;
+    break;
+    default:
+        std::cout<<"Número inválido"<<std::endl;
     }
     
-        
-
-    
-    
-
+      
 
 
 
