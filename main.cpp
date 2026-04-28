@@ -6,18 +6,23 @@
 #include <thread> // para lidar com o tempo de execução
 #include <chrono> // para definir unidades de tempo (ms, segundos)
 #include <vector>
-int main()
-{
 
-   int myNumbers[5] = {1, 2, 3, 4, 5};
+   void verificarAprovacao(float nota){
+    if(nota >= 7){
+        std::cout<<"Status: Aprovado!"<<std::endl;
+        }else{
+            std::cout<<"Status: Reprovados!"<<std::endl;
+        }
+   }
 
-   //for(int i = 0; i < 5; i++){
-    //     std::cout<<myNumbers[i]<<std::endl;
-   // }
+   int main(){
 
-    for(int num : myNumbers){
-        std::cout<<num<<std::endl;
-    }
+    float minhaNota = 8.5;
+
+    verificarAprovacao(minhaNota);
+
+    std::cout<<"Fazendo um teste para o Arthur!!"<<std::endl;
+
 
     return 0;
-}
+    }
