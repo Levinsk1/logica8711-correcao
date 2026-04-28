@@ -5,20 +5,18 @@
 #include <cmath>
 #include <thread> // para lidar com o tempo de execução
 #include <chrono> // para definir unidades de tempo (ms, segundos)
-
+#include <vector>
 int main()
 {
 
-    SetConsoleOutputCP(CP_UTF8); //
-    SetConsoleCP(CP_UTF8);       //
+    std::vector<std::string>cars = {"Volvo", "BMW", "Mercedes"};
 
+    cars.push_back("mazda");
 
-    for(int i = 0; i < 10; i++){
-        if(i ==4){
-            break;
-        }
-        std::cout<<i<<std::endl;
+    for(std::string car : cars){
+        std::cout<<car<<std::endl;
     }
+
 
 
     return 0;
