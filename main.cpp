@@ -13,9 +13,11 @@ int main()
     SetConsoleCP(CP_UTF8);       //
 
 
-    int myNumbers[5] = {10, 20, 30, 40, 50};
-    for(int num : myNumbers){
-        std::cout<<num<<std::endl;
+    for(int i = 0; i < 10; i++){
+        if(i ==4){
+            break;
+        }
+        std::cout<<i<<std::endl;
     }
 
 
