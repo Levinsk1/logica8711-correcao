@@ -7,14 +7,13 @@
 #include <chrono> // para definir unidades de tempo (ms, segundos)
 #include <vector>
 
-   int myFuncion(int x, int y){
-    return x + y;
+   int doubleGame(int x){
+    return x * 2;
    }
-
-   int main(){
-
-    std::cout<<myFuncion(5, 3)<<std::endl;
     
+    int main(){
+        for(int i = 1; i <=5;i++)
+        std::cout<<"O dobro de "<<i<<" é "<<doubleGame(i)<<std::endl;
 
     return 0;
     }
