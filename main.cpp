@@ -7,13 +7,13 @@
 #include <chrono> // para definir unidades de tempo (ms, segundos)
 #include <vector>
 
-   void minhaFuncao(std::string nome, int idade){
-    std::cout<<"Meu nome é "<<nome<<" e tenho "<<idade<<" anos."<<std::endl;
+   int myFuncion(int x, int y){
+    return x + y;
    }
-    
-    int main(){
 
-        minhaFuncao("Arthur", 19);
+   int main(){
+
+    std::cout<<myFuncion(5, 3)<<std::endl;
     
 
     return 0;
