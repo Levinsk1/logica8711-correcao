@@ -7,21 +7,16 @@
 #include <chrono> // para definir unidades de tempo (ms, segundos)
 #include <vector>
 
-   void verificarAprovacao(float nota){
-    if(nota >= 7){
-        std::cout<<"Status: Aprovado!"<<std::endl;
-        }else{
-            std::cout<<"Status: Reprovados!"<<std::endl;
-        }
+   void minhaFuncao(std::string nome){
+        std::cout<<nome<<std::endl;
    }
 
-   int main(){
+    int main(){
 
-    float minhaNota = 8.5;
-
-    verificarAprovacao(minhaNota);
-
-    std::cout<<"Fazendo um teste para o Arthur!!"<<std::endl;
+        minhaFuncao("Arthur");
+        minhaFuncao("Nome");
+    
+        std::cout<<"Fazendo um teste para o Arthur!!"<<std::endl;
 
 
     return 0;
