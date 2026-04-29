@@ -16,8 +16,6 @@
         minhaFuncao("Arthur");
         minhaFuncao("Nome");
     
-        std::cout<<"Fazendo um teste para o Arthur!!"<<std::endl;
-
 
     return 0;
     }
