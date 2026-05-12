@@ -7,44 +7,72 @@
 #include <chrono> // para definir unidades de tempo (ms, segundos)
 #include <vector>
 
-int main() {
 
-int num1, num2, soma, subt, mult, op;
-float div;
-
-std::cout<<"Digite aqui o valor para o número 1: "<<std::endl;
-std::cin>>num1;
-
-std::cout<<"Digite aqui o valor para o número 2: "<<std::endl;
-std::cin>>num2;
-
-std::cout<<"------ Escolha a Operação ------"<<std::endl;
-std::cout<<"1 - soma";
-std::cout<<"2 - subtração";
-std::cout<<"3 - multiplicação";
-std::cout<<"4 - divisão";
-std::cin>>op;
-
-switch(op){
-    case 1:
-    soma = num1 + num2;
-    std::cout<<"O resultado da soma é: "<<soma<<std::endl;
-    break;
-    case 2:
-    subt = num1 - num2;
-    std::cout<<"O resultado da subtração é: "<<subt<<std::endl;
-    break;
-    case 3: 
-    mult = num1 * num2;
-    std::cout<<"O resultado da multiplicação é: "<<mult<<std::endl;
-    break;
-    case 4:
-    div = num1 / num2;
-    std::cout<<"O resultado da divisão é: "<<div<<std::endl;
-    break;
-    default:
-    std::cout<<"Você não digitou nenhum valor válido!"<<std::endl;
+float somar(float a, float b){
+    return a + b;
 }
 
-return 0;
+float subtrair(float a, float b){
+    return a - b;
+}
+
+float multiplicar(float a, float b){
+    return a * b;
+}
+
+float dividir(float a, float b){
+    if(b == 0){
+        std::cout<<"Não é possível dividir por 0!"<<std::endl;
+        return 0;
+    }else{
+        return a / b;
+    }
+}
+
+void coletarNumeros(float &a, float &b){
+    std::cout<<"Digite um valor para a: "<<std::endl;
+    std::cin>>a;
+
+    std::cout<<"Digite um valor para b: "<<std::endl;
+    std::cin>>b;
+}
+
+void exibirResultado(float &a, float &b){
+    coletarNumeros(a, b);
+
+    int op;
+    std::cout<<"Digite uma opção: "<<std::endl;
+    std::cout<<"1 - Somar"<<std::endl;
+    std::cout<<"2 - Subtrair"<<std::endl;
+    std::cout<<"3 - Multiplicar"<<std::endl;
+    std::cout<<"4 - Dividir"<<std::endl;
+    std::cin>>op;
+
+    switch(op){
+        case 1:
+            std::cout<<"O resultado é: "<<somar(a, b)<<std::endl;
+            break;
+        case 2:
+            std::cout<<"O resultado é: "<<subtrair(a, b)<<std::endl;
+            break;
+        case 3:
+            std::cout<<"O resultado é: "<<multiplicar(a, b)<<std::endl;
+            break;
+        case 4:
+            std::cout<<"O resultado é: "<<dividir(a, b)<<std::endl;
+            break;
+        default:
+            std::cout<<"Você digitou um valor inválido!"<<std::endl;
+    }
+}
+
+int main(){
+
+    SetConsoleOutputCP(CP_UTF8);
+    SetConsoleCP(CP_UTF8);
+
+    float num1 = 0, num2 = 0;
+    exibirResultado(num1, num2);
+
+    return 0;
 }
